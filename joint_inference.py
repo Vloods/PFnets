@@ -24,11 +24,11 @@ def get_spots_centroids(spots):
 
 
 class YOLO_inf:
-    def __init__(self, path_to_cfg, path_to_weights):
+    def __init__(self, path_to_cfg, path_to_weights, inference=True):
         """
         ParkFinder YOLOv4 inference.
         """
-        self.model = Darknet(path_to_cfg).load_weights(path_to_weights)
+        self.model = Darknet(path_to_cfg, inference).load_weights(path_to_weights)
     
     def _detect(self, image, th, nms_th):
         """
