@@ -24,5 +24,5 @@
      '18': True,
      '19': True}
 
-![Result](/images/result.jpg)
+![Result](/images/result_detect.jpg)
 
